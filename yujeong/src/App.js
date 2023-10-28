@@ -2,7 +2,6 @@ import {React} from 'react';
 import { Route,Routes } from "react-router-dom";
 import SplashScreen from './componets/splashScreen';
 import Onboarding from './componets/onboarding';
-import { Container } from '@mui/system';
 
 function App() {
   return (
