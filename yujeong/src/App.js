@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path='/' element={<SplashScreen></SplashScreen>} />
         <Route path='/onboarding' element={<Onboarding></Onboarding>} />
+        <Route path='/chat' element={<h1>반가워요</h1>} />
       </Routes>     
     </>
   );

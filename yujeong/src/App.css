@@ -3,7 +3,6 @@ body, html,Container {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #1E4174;
   }
   
 .app-container {
@@ -33,4 +32,11 @@ body, html,Container {
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+.onboarding{
+    margin-top: 2em;
+    padding: 2em;    
+}
+.onboardingBox{
+    height: 40em;
 }
