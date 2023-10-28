@@ -29,8 +29,10 @@ function SwipeableOnboardingStepper() {
         return (
           <div className='onboardingBox'>
             <Paper elevation={3} sx={{ padding: 2,height:'35em' }}>
-                <h1>첫번째 페이지</h1>
-                <input type='text'></input>
+                <h1>Create an Account</h1>
+                <input type='text' placeholder='학교'></input><br />
+                <input type='text' placeholder='이름'></input><br />
+                <input type='text' placeholder='성별'></input><br />
             </Paper>
           </div>
 
@@ -41,14 +43,39 @@ function SwipeableOnboardingStepper() {
           <div className='onboardingBox'>  
             <Paper elevation={3} sx={{ padding: 2,height:'35em' }}>
               <Typography variant="h5" gutterBottom>
-                두 번째 페이지
+                Your Keyword
               </Typography>
-              {/* 여섯 개의 체크박스 */}
               <label>
                 <input type="checkbox" />
-                체크박스 1
+                내향적
               </label>
-              {/* 나머지 체크박스들도 유사하게 만듭니다. */}
+              <label>
+                <input type="checkbox" />
+                외향적
+              </label>
+              <label>
+                <input type="checkbox" />
+                활동적인
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" />
+                전문적인
+              </label>
+              <label>
+                <input type="checkbox" />
+                열정적인
+              </label>
+              <label>
+                <input type="checkbox" />
+                낙관적
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" />
+                계획적
+              </label>
+            
             </Paper>
           </div>
         );
@@ -57,14 +84,20 @@ function SwipeableOnboardingStepper() {
           <div className='onboardingBox'>
             <Paper elevation={3} sx={{ padding: 2,height:'35em' }}>
               <Typography variant="h5" gutterBottom>
-                세 번째 페이지
+                Choice AI
               </Typography>
-              {/* 세 개의 체크박스 */}
               <label>
                 <input type="checkbox" />
-                체크박스 1
+                이보나
               </label>
-              {/* 나머지 체크박스들도 유사하게 만듭니다. */}
+              <label>
+                <input type="checkbox" />
+                유진
+              </label>
+              <label>
+                <input type="checkbox" />
+                이호창
+              </label>
             </Paper>
           </div>
         );

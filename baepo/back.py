@@ -13,8 +13,12 @@ def home():
     return "HelloWorld"
 
 #강의추천
-@app.route("/recommend",methods = ['POST'])
+@app.route("/recommend",methods = ['GET','POST'])
 def recommend():
+
+    if request.method == "GET":
+        return "GOOD"
+    
     payload = request.get_json()
 
     #str
@@ -26,6 +30,7 @@ def recommend():
 
     ans = {"outprom":outprom}
     return jsonify(ans)
+
 
 #시간표 작성
 @app.route("/schedule",methods = ['POST'])
