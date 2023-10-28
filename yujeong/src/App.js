@@ -1,8 +1,17 @@
+import {React} from 'react';
+import { Route,Routes } from "react-router-dom";
+import SplashScreen from './componets/splashScreen';
+import Onboarding from './componets/onboarding';
+import { Container } from '@mui/system';
+
 function App() {
   return (
-    <div className="App">
-      리액트
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<SplashScreen></SplashScreen>} />
+        <Route path='/onboarding' element={<Onboarding></Onboarding>} />
+      </Routes>     
+    </>
   );
 }
 
