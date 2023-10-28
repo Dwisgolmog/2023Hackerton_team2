@@ -2,6 +2,7 @@ import {React} from 'react';
 import { Route,Routes } from "react-router-dom";
 import SplashScreen from './componets/splashScreen';
 import Onboarding from './componets/onboarding';
+import Chatting from './chat';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<SplashScreen></SplashScreen>} />
         <Route path='/onboarding' element={<Onboarding></Onboarding>} />
-        <Route path='/chat' element={<h1>반가워요</h1>} />
+        <Route path='/chat' element={<Chatting></Chatting>} />
       </Routes>     
     </>
   );
